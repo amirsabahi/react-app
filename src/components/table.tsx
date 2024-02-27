@@ -31,13 +31,13 @@ export function DataTable() {
         <>
         { error && <div>{error}</div> }
             <form method="post" onSubmit={handleSubmit}>
-                <Stack direction={"row"}>
+                <Stack direction={"row"} sx={{marginTop:"20px"}}>
                     <input ref={investorRef} name="investor" />
                     <input ref={contributionRef} name="contribution" />
                 </Stack>
                 <button type="submit">Submit</button>
             </form>
-            <Table sx={{color:"#fff"}}>
+            <Table sx={{color:"#fff", marginTop:"20px"}}>
                 <TableBody>
 
                     {

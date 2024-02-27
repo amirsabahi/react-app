@@ -3,12 +3,14 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { DataTable } from './components/table'
+import { TanstackTable } from './components/tanstackTable'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
+      <TanstackTable />
       <DataTable />
       {/*<div>
         <a href="https://vitejs.dev" target="_blank">
