@@ -4,14 +4,16 @@
 import './App.css'
 import { DataTable } from './components/table'
 import { TanstackTable } from './components/tanstackTable'
-
+import {DialogBox} from './components/DialogBox'
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
+      <DialogBox />
       <TanstackTable />
       <DataTable />
+      
       {/*<div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
