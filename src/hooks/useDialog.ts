@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react"
 
 export const useDialog = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState<boolean>(false);
     const [dialogParams, setDialogParams] = useState({title: ''})
     const openDialog= useCallback((dialogeParams:{title:string})=> {
         setOpen(true)
